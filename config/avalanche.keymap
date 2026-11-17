@@ -74,6 +74,7 @@
 */
 
         default_layer {
+            display-name = "Base";
             bindings = <
 &kp ESCAPE  &kp N1                                       &kp N2  &kp N3   &kp N4     &kp N5                                           &kp N6                 &kp N7     &kp N8         &kp N9  &kp N0     &kp MINUS
 &kp TAB     &kp Q                                        &kp W   &kp E    &kp R      &kp T                                            &kp Y                  &kp U      &kp I          &kp O   &kp P      &hm LEFT_BRACKET RIGHT_BRACKET
@@ -86,16 +87,18 @@
         };
 
         layer_1 {
+            display-name = "Fn";
             bindings = <
 &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3                     &bt BT_SEL 4                    &bt BT_CLR_ALL                  &kp ESC  &kp N7  &kp N8  &kp N9  &kp LS(STAR)  &kp FSLH
 &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_COLOR_HSB(0,100,50)  &bt BT_CLR                      &bt BT_NXT                      &trans   &kp N4  &kp N5  &kp N6  &kp PLUS      &kp MINUS
-&trans           &kp CAPS         &rgb_ug RGB_BRD  &rgb_ug RGB_EFR                  &rgb_ug RGB_COLOR_HSB(0,0,100)  &trans          &trans                   &trans  &kp N1  &kp N2  &kp N3        &trans     &trans        &kp RET
+&studio_unlock   &kp CAPS         &rgb_ug RGB_BRD  &rgb_ug RGB_EFR                  &rgb_ug RGB_COLOR_HSB(0,0,100)  &trans          &trans                   &trans  &kp N1  &kp N2  &kp N3        &trans     &trans        &kp RET
 &trans           &trans           &trans           &trans                           &trans                          &trans          &trans  &trans  &trans   &trans  &trans  &trans  &kp N0        &trans     &kp CAPSLOCK  &kp BSPC
                  &trans           &trans           &trans                           &trans                          &trans                          &trans   &trans  &trans  &trans  &SBH
             >;
         };
 
         NAVIGATION {
+            display-name = "Nav";
             bindings = <
 &to 0      &tog 3    &trans     &trans     &trans  &kp PG_UP                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp PG_UP  &kp W     &kp PG_DN  &trans     &trans  &kp PG_DN                       &trans  &trans  &trans  &trans  &trans  &trans
@@ -106,6 +109,7 @@
         };
 
         SOLIDWORKS {
+            display-name = "SolidWorks";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
@@ -116,6 +120,7 @@
         };
 
         MISSION {
+            display-name = "Mission";
             bindings = <
 &trans  &trans    &trans  &trans  &BORE   &bore                   &trans  &trans  &trans  &trans        &trans        &trans
 &trans  &trans    &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans        &trans        &trans

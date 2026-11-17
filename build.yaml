@@ -1,19 +1,17 @@
-# This file generates the GitHub Actions matrix
-# For simple board + shield combinations, add them
-# to the top level board and shield arrays, for more
-# control, add individual board + shield combinations to
-# the `include` property, e.g:
+# Builds the Avalanche firmware on GitHub Actions.
 #
-# board: [ "nRF52840 M.2 Module" ]
-# shield: [ "corne_left", "corne_right" ]
-# include:
-#   - board: bdn9_rev2
-#   - board: nice_nano_v2
-#     shield: reviung41
-#
+# The left half is the central (it talks to the computer), so ZMK Studio is
+# built into the left half only: connect it over USB and open https://zmk.studio.
+# Unlock key: hold Fn (&mo 1) and press the outermost key of the left home row
+# (the one that is Esc on the base layer).
 ---
 include:
   - board: nice_nano_v2
     shield: avalanche_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: avalanche_left-nice_nano_v2-zmk
   - board: nice_nano_v2
     shield: avalanche_right
+  - board: nice_nano_v2
+    shield: settings_reset

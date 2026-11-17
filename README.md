@@ -84,6 +84,14 @@ Esse é a GUI mais nova do ZMK, ainda está em Beta, tem algumas limtações, n�
 
 ![image](https://github.com/user-attachments/assets/f1532b9f-3dba-42ea-84fa-412ed3341d09)
 
+O firmware deste repositório já vem pronto para o ZMK Studio:
+
+1. Passe o firmware novo nas duas metades (o Studio fica só na metade **esquerda**, que é a central).
+2. Conecte a metade esquerda no computador pelo cabo USB e abra https://zmk.studio (Chrome ou Edge) ou o app do ZMK Studio.
+3. Para desbloquear, segure **Fn** (a tecla `&mo 1`) e aperte a tecla mais de fora da fileira do meio à esquerda (a que é **Esc** na camada base).
+
+As mudanças feitas no Studio ficam salvas no teclado, não no GitHub. Para voltar ao keymap do repositório, use "Restore Stock Settings" no Studio ou passe o `settings_reset` e depois o firmware de novo.
+
 A vantagem do ZMK.STUDIO é que você quase nunca precisará mexer em código, compilar, baixar e passar o novo firmware de cada alteração para o teclado, o que pode definitivamente ser chato. Mas, não acho que vale a pena, ao menos quando você ainda está aprendendo a usar o ZMK.
 
 ---
